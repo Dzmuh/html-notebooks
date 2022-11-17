@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Примеры использования элемента &lt;video&gt; в HTML5</title>
+</head>
+
+<body>
+<article>
+<h1>Примеры использования элемента &lt;video&gt; в HTML5</h1>
+
+<section>
+<h2>Для FireFox, Chrome</h2>
+<pre>
+&lt;video controls="controls"&gt;
+&lt;source src="dizzy.ogv" type="video/ogg" /&gt;
+&lt;/video&gt;
+</pre>
+
+<p>Результат отображения элемента &lt;video&gt;:</p>
+<video controls="controls" tabindex="0">
+    <source type="video/ogg" src="dizzy.ogv"></source>
+</video>
+</section>
+<section>
+<h2>Для FireFox (динамичный вариант) с двумя кнопками</h2>
+<video id="MyVideo1" controls="controls" tabindex="0">
+    <source type="video/ogg" src="dizzy.ogv"></source>
+</video>
+<p>Две кнопки: 
+    <button onclick="document.getElementById('MyVideo1').pause();" type="button">Пауза</button>
+    <button onclick="document.getElementById('MyVideo1').play();" type="button">Смотреть</button>
+</p>
+<pre>&lt;video id=&quot;MyVideo1&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
+    &lt;source type=&quot;video/ogg&quot; src=&quot;/public/html5/video.ogv&quot;&gt;&lt;/source&gt;
+&lt;/video&gt;
+&lt;p&gt;Две кнопки: 
+    &lt;button onclick=&quot;document.getElementById('MyVideo1').pause();&quot; type=&quot;button&quot;&gt;Пауза&lt;/button&gt;
+    &lt;button onclick=&quot;document.getElementById('MyVideo1').play();&quot; type=&quot;button&quot;&gt;Смотреть&lt;/button&gt;
+&lt;/p&gt;</pre>
+</section>
+<section>
+<h2>Для FireFox (динамичный вариант) с одной кнопкой</h2>
+<video id="MyVideo2" controls="controls" tabindex="0">
+    <source type="video/ogg" src="dizzy.ogv"></source>
+</video>
+<button onclick="video = document.getElementById('MyVideo2');if (video.paused){
+    this.innerHTML='Пауза'; video.play();
+    }else{
+    this.innerHTML='Смотреть'; video.pause();
+    }"
+type="button">Смотреть</button>
+<pre>&lt;video id=&quot;MyVideo2&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
+    &lt;source type=&quot;video/ogg&quot; src=&quot;dizzy.ogv&quot;&gt;&lt;/source&gt;
+&lt;/video&gt;
+&lt;button onclick=&quot;video = document.getElementById('MyVideo2');if (video.paused){
+    this.innerHTML='Пауза'; video.play();
+    }else{
+    this.innerHTML='Смотреть'; video.pause();
+    }&quot;
+type=&quot;button&quot;&gt;Смотреть&lt;/button&gt;</pre>
+</section>
+</article>
+</body>
+</html>
