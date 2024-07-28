@@ -1,4 +1,4 @@
-# HTML notebooks
+# HTML/CSS notebooks
 
 ## Linki
 
