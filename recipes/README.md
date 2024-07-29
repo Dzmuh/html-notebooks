@@ -144,7 +144,7 @@
 * [Как добавить рамку вокруг кнопки?](./forms/form-button-borders.ipynb)
 * [Как добавить тень к кнопке?](./forms/form-button-box-shadow.ipynb)
 * [Как запретить изменение размеров `<textarea>`?](./forms/form-textarea-noresize.ipynb)
-* Как изменить вид нажатой кнопки?
+* [Как изменить вид нажатой кнопки?](./forms/form-button-active.ipynb)
 * [Как изменить цвет кнопки?](./forms/form-button-color.ipynb)
 * Как кнопку сделать ссылкой?
 * Как сделать круглую кнопку?
