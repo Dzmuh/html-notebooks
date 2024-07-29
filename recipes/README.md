@@ -148,7 +148,7 @@
 * [Как изменить цвет кнопки?](./forms/form-button-color.ipynb)
 * [Как кнопку сделать ссылкой?](./forms/form-button-to-link.ipynb)
 * [Как сделать круглую кнопку?](./forms/form-button-round.ipynb)
-* Как сделать, чтобы в текстовом поле заранее выводился опредёленный текст?
+* [Как сделать, чтобы в текстовом поле заранее выводился опредёленный текст?](./forms/form-input-textfield-text.ipynb)
 * [Как убрать рамку у кнопок?](./forms/form-button-noborder.ipynb)
 
 ## Цвет
