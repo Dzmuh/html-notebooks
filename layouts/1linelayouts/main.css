@@ -1,0 +1,32 @@
+:root {
+    --coral: hsl(23, 83%, 82%);
+    --coral--b: hsl(23, 99%, 75%);
+    --blue: hsl(187, 61%, 79%);
+    --blue--b: hsl(187, 54%, 68%);
+}
+
+.box {
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.ex-section {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2rem;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+}
+.blue {
+    background-color: var(--blue);
+    border: 1px solid var(--blue--b);
+}
+.coral {
+    background-color: var(--coral);
+    border: 1px solid var(--coral--b);
+}
