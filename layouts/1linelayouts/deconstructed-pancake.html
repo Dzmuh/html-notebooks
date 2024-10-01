@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deconstructed Pancake</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+    .ex2 .parent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ex2 .box {
+        flex: 1 1 150px; /*  Stretching: */
+        flex: 0 1 150px; /*  No stretching: */
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deconstructed Pancake</h1>
+    </header>
+    <main class="ex-section ex2">
+        <div class="ex-container">
+            <div class="parent white">
+                <div class="box green">1</div>
+                <div class="box green">2</div>
+                <div class="box green">3</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
