@@ -12,114 +12,114 @@
     --purple: hsl(283, 24%, 86%);
     --purple--b: hsl(283, 43%, 80%);
     --light-gray-blue: hsl(182, 29%, 96%);
-  
+
     --pageMax: 1260px;
     --headerHeight: 60px;
     --middleHeight: 300px;
     --footerHeight: 100px;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-  
-  body {
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+body {
     margin: 0;
     padding: 0;
     font-family: system-ui, sans-serif;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin: 0;
-  }
-  
-  ul,
-  ol {
+}
+
+ul,
+ol {
     margin: 0;
     padding: 0;
-  }
-  
-  style,
-  code {
+}
+
+style,
+code {
     font-family: "Inconsolata", monospace;
-  }
-  
-  .coral {
+}
+
+.coral {
     background-color: var(--coral);
     border: 1px solid var(--coral--b);
-  }
-  
-  .pink {
+}
+
+.pink {
     background-color: var(--pink);
     border: 1px solid var(--pink--b);
-  }
-  
-  .yellow {
+}
+
+.yellow {
     background-color: var(--yellow);
     border: 1px solid var(--yellow--b);
-  }
-  
-  .green {
+}
+
+.green {
     background-color: var(--green);
     border: 1px solid var(--green--b);
-  }
-  
-  .blue {
+}
+
+.blue {
     background-color: var(--blue);
     border: 1px solid var(--blue--b);
-  }
-  
-  .purple {
+}
+
+.purple {
     background-color: var(--purple);
     border: 1px solid var(--purple--b)
-  }
-  
-  .white {
+}
+
+.white {
     background-color: white;
-  }
-  
-  .meta h1 {
+}
+
+.meta h1 {
     font-size: 4rem;
     font-weight: 300;
-  }
-  
-  .meta p {
+}
+
+.meta p {
     font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 300;
-  }
-  
-  .meta a {
+}
+
+.meta a {
     color: hsl(207, 90%, 54%);
-  }
-  
-  section:nth-child(2n) {
-    background-color: var(--light-gray-blue);  
-  }
-  
-  section:nth-child(2n) .code-container,
-  section:nth-child(2n) .tab-area button.active {
+}
+
+section:nth-child(2n) {
+    background-color: var(--light-gray-blue);
+}
+
+section:nth-child(2n) .code-container,
+section:nth-child(2n) .tab-area button.active {
     background-color: white;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .section-title code {
+}
+
+.section-title code {
     display: block;
     width: auto;
     font-size: 0.8em;
     margin-left: 2em;
-  }
-  
-  .ex-section {
+}
+
+.ex-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2rem;
-  }
-  
-  .ex-container {
+}
+
+.ex-container {
     resize: both;
     position: relative;
     overflow: hidden;
@@ -130,9 +130,9 @@
     display: grid;
     align-items: center;
     background: white;
-  }
-  
-  /* .ex-container::before {
+}
+
+/* .ex-container::before {
     content: "resize me!";
     background-color: white;
     position: absolute;
@@ -140,26 +140,26 @@
     right: 10px;
     display: block;
   } */
-  
-  .meta,
-  .footer {
+
+.meta,
+.footer {
     text-align: center;
     padding: 4rem;
     margin: 0 auto;
-  }
-  
-  .footer a {
+}
+
+.footer a {
     color: white;
     color: hsl(207, 90%, 54%);
-  }
-  
-  .code-area {
+}
+
+.code-area {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 400px;
-  }
-  
-  .code-container {
+}
+
+.code-container {
     white-space: pre-wrap;
     display: none;
     overflow-y: scroll;
@@ -169,155 +169,155 @@
     border: 1px solid var(--blue);
     margin-top: -1px;
     font-size: 1.35rem;
-  }
-  
-  .tab-area {
+}
+
+.tab-area {
     display: grid;
     width: 50%;
     justify-self: end;
     grid-template-columns: 1fr 1fr;
-  }
-  
-  .tab-area button {
+}
+
+.tab-area button {
     border: none;
     border-radius: 0.5rem 0.5rem 0 0;
     padding: 0.5rem;
-  }
-  
-  .tab-area button.active {
+}
+
+.tab-area button.active {
     border: 1px solid var(--blue);
     border-bottom: none;
     z-index: 1;
     background: var(--light-gray-blue);
-  }
-  
-  .section-container {
+}
+
+.section-container {
     max-width: var(--pageMax);
     margin: 0 auto;
     padding: 4rem 2rem;
-  }
-  
-  .codepen-link {
+}
+
+.codepen-link {
     text-align: right;
-  }
-  
-  .parent {
+}
+
+.parent {
     width: 100%;
     height: 100%;
-  }
-  
-  .taglist {
+}
+
+.taglist {
     display: flex;
-  }
-  
-  .taglist li {
+}
+
+.taglist li {
     padding: 0.2rem 0.5rem;
     border-radius: 1rem;
     font-size: 14px;
     list-style: none;
-  }
-  
-  .taglist li + li {
+}
+
+.taglist li+li {
     margin-left: 0.5rem;
-  }
-  
-  .meta-area {
+}
+
+.meta-area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     margin-bottom: 1rem;
-  }
-  
-  .support-area {
+}
+
+.support-area {
     display: grid;
     justify-content: flex-end;
-  }
-  
-  .support-area span {
+}
+
+.support-area span {
     justify-self: flex-end;
     margin-bottom: 0.25rem;
-  }
-  
-  .codepen-link {
+}
+
+.codepen-link {
     color: hsl(187, 83%, 37%);
     font-style: italic;
-  }
-  
-  /*  For Demos */
-  
-  .box {
+}
+
+/*  For Demos */
+
+.box {
     font-size: 2rem;
     padding: 1rem;
     display: grid;
     place-items: center;
     border-radius: 1rem;
     border-style: dashed;
-  }
-  
-  .ex-container .section {
+}
+
+.ex-container .section {
     font-size: 1.5rem;
     padding: 1rem;
     border-style: dashed;
-  }
-  
-  @media screen and (min-width: 811px) {
+}
+
+@media screen and (min-width: 811px) {
     .ex-section {
-      height: 400px;
+        height: 400px;
     }
-    
+
     .section-container {
-      padding: 8rem 4rem;
+        padding: 8rem 4rem;
     }
-    
+
     .meta {
-      max-width: 46ch;
-      padding: 8rem auto;
+        max-width: 46ch;
+        padding: 8rem auto;
     }
-  }
-  
-  @media screen and (max-width: 811px) {
+}
+
+@media screen and (max-width: 811px) {
     .ex-container {
-      height: 300px;
+        height: 300px;
     }
-    
+
     .ex-section {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-    
+
     .box {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .ex-container .section {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-    
+
     .section-title code {
-      margin-left: 0;
-      margin-top: 1rem;
+        margin-left: 0;
+        margin-top: 1rem;
     }
-    
+
     .support-area {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
-    
+
     .code-area {
-      height: 300px;
+        height: 300px;
     }
-    
+
     .code-container {
-      font-size: 1.15rem;
+        font-size: 1.15rem;
     }
-  }
-  
-  .yt-embed {
+}
+
+.yt-embed {
     padding-top: 56.25%;
     position: relative;
     width: 100%;
-  }
-  
-  .yt-embed iframe {
+}
+
+.yt-embed iframe {
     height: 100%;
     left: 50%;
     position: absolute;
@@ -325,19 +325,18 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
-  }
-  
-  /* Scrollbar */
-  body::-webkit-scrollbar {
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
     width: 0.75rem;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background-color: transparent;
     border: 1px solid var(--blue--b);
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--blue);
-  }
-  
+}

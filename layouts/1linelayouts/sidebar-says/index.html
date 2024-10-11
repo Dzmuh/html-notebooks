@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Says</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+        .ex3 .parent {
+            display: grid;
+            grid-template-columns: minmax(150px, 25%) 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sidebar Says</h1>
+    </header>
+    <main class="ex-section ex3">
+        <div class="ex-container">
+            <div class="parent">
+                <div class="section yellow" contenteditable>
+                    Min: 150px
+                    <br>
+                    Max: 25%
+                </div>
+                <div class="section purple" contenteditable>
+                    This element takes the second grid position (1fr), meaning
+                    it takes up the rest of the remaining space.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
